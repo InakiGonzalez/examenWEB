@@ -1,0 +1,14 @@
+/* Dashboard.css */
+
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #0661ff70; /* Dark background for casino feel */
+}
+
+.card-wrapper {
+    padding: 2%;
+}
