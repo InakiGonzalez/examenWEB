@@ -1,0 +1,54 @@
+/* NavigationBar.css */
+
+.navigation-bar {
+    width: 95%;
+    height: 60px; /* Increased height for better appearance */
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background-color: #333; /* Dark background for casino feel */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+}
+
+.navigation-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-links {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navigation-link:hover {
+    color: #ffd700; /* Gold text on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.home-icon {
+    margin-right: 10px;
+}
+
+.filter-input {
+    border: 2px solid #ffd700; /* Gold border */
+    width: 200px;
+    border-radius: 10px;
+    height: 30px;
+    background-color: #555; /* Darker input background */
+    color: #fff; /* White text */
+    padding-left: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.filter-input:focus {
+    border-color: #ffd700; /* Gold border on focus */
+    outline: none;
+}

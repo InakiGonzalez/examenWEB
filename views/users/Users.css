@@ -1,0 +1,140 @@
+/* Users.css */
+
+.casino-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #007BFF; /* Dark background for casino feel */
+    color: #fff; /* White text */
+    min-height: 100vh;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.casino-content {
+    width: 80%;
+    margin-bottom: 20px;
+    border: 2px solid #ff0000; /* Gold border for casino feel */
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #1b1b1b, #323232);
+    box-shadow: 10px 10px 20px #1b1b1b, -10px -10px 20px #323232;
+}
+
+.prev-description-container {
+    margin-bottom: 20px;
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.prev-description-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.prev-description-card {
+    border: 2px solid #ff0000; /* Maintain gold border */
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 150px; /* Fixed width for non-expanded state */
+    height: 200px; /* Fixed height for non-expanded state */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    white-space: normal; /* Allowing normal text wrapping */
+    text-align: center;
+    flex-shrink: 0; /* Prevent shrinking */
+    background-color: #007BFF
+    ; /* Dark background for casino feel */
+    color: #fff; /* White text */
+    position: relative; /* Required for the absolute positioning of the expanded view */
+}
+
+.prev-description-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Gold shadow for hover effect */
+    border: 2px solid #ff0000; /* Ensure border remains on hover */
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items to the start for a cleaner look */
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.casino-textarea-container {
+    flex: 1; /* Ensure the textarea container takes up available space */
+}
+
+.casino-textarea {
+    width: 90%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #444; /* Darker textarea background */
+    color: #fff; /* White text */
+    font-size: 16px;
+    resize: none; /* Prevent resizing */
+}
+
+.label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff; /* Gold text */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.casino-button {
+    height: 35px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.generate-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.generate-button:hover {
+    background-color: #0056b3;
+}
+
+.upload-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.upload-button:hover {
+    background-color: #218838;
+}
+
+.card-info {
+    background: linear-gradient(145deg, #1b1b1b, #323232);
+    border: 2px solid #ffd700;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #1b1b1b, -10px -10px 20px #323232;
+    color: #fff;
+}
