@@ -2,7 +2,18 @@ import React, { useState } from 'react';
 
 const PrevDescription = ({ descriptions }) => {
     const [expandedIndex, setExpandedIndex] = useState(null);
-
+    
+    const fetchDescriptions = async () => {
+        try {
+            const response = await fetch('/api/descriptions'); // Replace with your API endpoint
+            if (!response.ok) throw new Error('Network response was not ok');
+            const data = await response.json();
+            setDescriptions(Array.isArray(data) ? data : []); // Ensure data is an array
+        } catch (error) {
+            console.error('Failed to fetch descriptions:', error);
+            setDescriptions([]); // Set to empty array on error
+        }
+    };
     const handleExpand = (index) => {
         setExpandedIndex(index === expandedIndex ? null : index);
     };

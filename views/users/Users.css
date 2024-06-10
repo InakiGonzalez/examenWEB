@@ -122,17 +122,17 @@
 }
 
 .upload-button {
-    background-color: #28a745;
+    background-color: #ff0000;
     color: white;
 }
 
 .upload-button:hover {
-    background-color: #218838;
+    background-color: #882121;
 }
 
 .card-info {
     background: linear-gradient(145deg, #1b1b1b, #323232);
-    border: 2px solid #ffd700;
+    border: 2px solid #000000;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 10px 10px 20px #1b1b1b, -10px -10px 20px #323232;

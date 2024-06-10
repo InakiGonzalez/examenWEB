@@ -29,7 +29,7 @@
 }
 
 .navigation-link:hover {
-    color: #ffd700; /* Gold text on hover */
+    color: #f8f8f883; /* Gold text on hover */
     transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
@@ -38,17 +38,17 @@
 }
 
 .filter-input {
-    border: 2px solid #ffd700; /* Gold border */
+    border: 2px solid #000000; /* Gold border */
     width: 200px;
     border-radius: 10px;
     height: 30px;
-    background-color: #555; /* Darker input background */
+    background-color: #fffbfb; /* Darker input background */
     color: #fff; /* White text */
     padding-left: 10px;
     transition: border-color 0.3s ease;
 }
 
 .filter-input:focus {
-    border-color: #ffd700; /* Gold border on focus */
+    border-color: #ff0000; /* Gold border on focus */
     outline: none;
 }
